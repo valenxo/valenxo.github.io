@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="platos.html">Platos Principales</a></li>
+                <li><a href="contacto.html">*Contacto*</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="formOutput"></div>
+        <div id="commentsSection"></div>
+        
+        <div id="formOutput"></div>
+    </main>
+
+    <footer>
+        <p>© 2024 Recetas de Cocina</p>
+    </footer>
+
+    <script class="Contenido_a">
+        function validarFormulario() {
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            if (nombre === '' || email === '' || mensaje === '') {
+                alert('Todos los campos son obligatorios');
+                return false;
+            }
+
+            //profe  tengame piedad :)
+            return true;
+        }
+    </script>
+</body>
+</html>

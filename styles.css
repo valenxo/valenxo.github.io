@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9e6d2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Encabezado */
+header {
+    background-color: #ffc891;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #ffcc99;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.Contenido_a{
+    height: 500px;
+    overflow-y: scroll; 
+}
+
+#carousel_lasaña {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: left;
+    overflow: hidden;
+}
+
+#carouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#prevButton, #nextButton {
+    transform: translateY(-50%);
+    background-color: #ffcc99ad;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.columna {
+    flex: 1;
+    background-color: #f9e6d2;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
